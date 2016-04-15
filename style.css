@@ -8,9 +8,6 @@ a {
   text-decoration: none;
   color: #555;
 }
-a:hover {
-  color: #555;
-}
 
 
 a:active {
@@ -143,7 +140,6 @@ p:hover {
   list-style: none;
   letter-spacing: 1.6px;
   font-size: 14px;
-  font-weight: lighter;
   padding: 5px 10px;
   border-top: 1px solid white;
 }
@@ -207,8 +203,8 @@ p:hover {
   margin-right: 20px;
 }
 
-.options a:hover {
-  color: #555;
+.options li a:hover {
+  background-color: rgba(255,255,255, .5);
 }
 
 .options a:active {
