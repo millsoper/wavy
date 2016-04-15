@@ -8,7 +8,9 @@ a {
   text-decoration: none;
   color: #555;
 }
-
+a:hover {
+  color: #555;
+}
 
 
 a:active {
