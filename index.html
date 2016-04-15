@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Web Audio API</title>
+<script src="app.js" charset="utf-8"></script>
+<link href="style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+  <nav class="nav">
+
+    <div class="button sample"><a>play sample track</a></div>
+    <input type="file" name="audiofile" id="audiofile" class="inputfile" />
+    <label for="audiofile" class="button fileinput"><a>Choose a file</a></label>
+    <div class="controls">
+      <p class="play"></p>
+      <p class="stop"></p>
+    </div>
+    <aside class="options">
+      <div class="options-header">options</div>
+      <ul class="options-list">
+        <li>color
+          <div class="color">
+            <div class="rainbow"></div>
+            <a class="cycle">cycle colors</a>
+          </div>
+        </li>
+
+        <li>visualization
+          <div class="visualization">
+            <a id="circles" class="selected">circles</a>
+            <a id="oscillo">oscilloscope</a>
+            <a></a>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </nav>
+  <canvas id="canvas"></canvas>
+</body>
+</html>

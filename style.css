@@ -1,0 +1,214 @@
+ul {
+  margin-top: 10px;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
+
+
+
+.play {
+    display:inline-block;
+    margin:5px;
+    width: 24px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMZJREFUeNq0lt0NgzAMhIPlfWAR1BXYpDBSxSCFiYr70CqKUH6cO0t+SEC++xxkIvP8eFuOgRRiOVkeJvJkCAxW+BOtD8tl318nkiAOOE1KENA0knkGockRQGik8j03TS2Bm0YcbW2i8RA00UjnZ16k6SUo0ghw7NzSIAluaSRw4k/DEqCcQdqiyVq0KaH4+i38WyjjYONNZbhGChRHhTJc9wo0jWtluPYIuH+ZynBdKwC5tijDdU4AfnVUhutUAO46jkuAAQD+jXZOTODXVwAAAABJRU5ErkJggg==);
+    text-indent:-200px;
+    opacity: .4;
+}
+
+body {
+  background-color: #bbb;
+}
+
+.stop {
+    display:inline-block;
+    margin:5px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNrszUERAAAEADD0c/q3UYLfVmDZPfGp4plAIBAIBAKBQCC4sgIMAJggASlttpE8AAAAAElFTkSuQmCC);
+    text-indent:-200px;
+    opacity: .4;
+}
+p:hover {
+    cursor:pointer;
+    opacity:0.8;
+}
+.button a {
+  display: block;
+  padding: 5px 10px;
+  max-width: 133px;
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  border: white 1px solid;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  z-index: 10;
+}
+
+.button a:hover {
+  color: #555;
+  border: 1px solid #555;
+}
+
+.button a:active {
+  color: #00688B;
+  border: 1px solid #00688B;
+}
+
+#canvas {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  margin: 0 auto;
+}
+
+.fileinput {
+  margin-left: 45%;
+  margin-top: 20%;
+}
+
+.nav {
+  position: relative;
+  margin: 5% auto;
+  width: 60%;
+  z-index: 2;
+}
+
+.sample a{
+  margin-top: 20px;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.options {
+  display: block;
+  padding: 5px 10px;
+  max-width: 133px;
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.options div {
+  width: 130px;
+  text-align: right;
+  padding-right: 10px;
+}
+.options li {
+  text-align: right;
+  text-transform: lowercase;
+  list-style: none;
+  letter-spacing: 1.6px;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 5px 10px;
+  border-top: 1px solid white;
+}
+
+.options li:hover {
+  background-color: rgba(169, 169, 169, .45);
+}
+
+.options-header:hover {
+  color: #555;
+}
+
+.options-header:active {
+  color: #00688B;
+}
+
+.hiding {
+  display:none;
+}
+
+.rainbow {
+  height: 20px;
+  width: 120px;
+  overflow: hidden;
+  background: red; /* not working, let's see some red */
+  opacity: .3;
+    background: -moz-linear-gradient( left ,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, .25) 65%,
+        rgba(255, 0, 255, .05) 80%,
+        rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear,  left top,  right bottom,
+        color-stop(0%, rgba(255, 0, 0, 1)),
+        color-stop(15%, rgba(255, 255, 0, 1)),
+        color-stop(30%, rgba(0, 255, 0, 1)),
+        color-stop(50%, rgba(0, 255, 255, 1)),
+        color-stop(65%, rgba(0, 0, 255, .25)),
+        color-stop(80%, rgba(255, 0, 255, .05)),
+        color-stop(100%, rgba(255, 255, 255, 0)));
+}
+
+.rainbow:hover {
+  opacity: .65;
+}
+
+.color {
+  padding: 5px;
+  height: 70px;
+  width: 130px;
+}
+
+.color:hover .rainbow {
+  opacity: .6;
+}
+
+.options a {
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+.options a:hover {
+  color: #555;
+}
+
+.options a:active {
+  color: #00688B;;
+}
+
+.cycle {
+  display: block;
+  font-size: 12px;
+  padding: 3px;
+  margin: 8px;
+}
+
+.visualization a {
+  display: block;
+  font-size: 12px;
+}
+
+.controls {
+  padding-top: 20px;
+}
