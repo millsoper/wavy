@@ -188,4 +188,15 @@ window.onload = function() {
       display = "circles";
       console.log(display);
     })
+    var question = document.getElementsByClassName('help')[0];
+    var closeButton = document.getElementsByClassName('close')[0];
+    var modal = document.getElementsByClassName('modal')[0];
+
+    closeButton.addEventListener("click", function(){
+      modal.classList.add("closed");
+    })
+
+    question.addEventListener("click", function() {
+      modal.classList.remove("closed");
+    })
 };
