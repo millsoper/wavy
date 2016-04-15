@@ -16,12 +16,15 @@ window.onload = function() {
   	var audioInput = document.getElementById('audiofile');
 
     audioInput.addEventListener('change', function(event) {
-      stream = URL.createObjectURL(event.target.files[0]);
-      audio = new Audio();
-      console.log(audio);
-      audio.src = stream;
-      setup();
-    });
+      if (!audioContext || audioContext.state !== "running"){
+          stream = URL.createObjectURL(event.target.files[0]);
+          audio = new Audio();
+          console.log(audio);
+          audio.src = stream;
+          setup();
+        }
+      });
+
 
     var sample = document.getElementsByClassName('sample')[0];
 
