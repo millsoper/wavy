@@ -9,9 +9,7 @@ a {
   color: #555;
 }
 
-a:hover {
-  color: darkturquoise;
-}
+
 
 a:active {
   color: #00688B;
@@ -281,6 +279,10 @@ p:hover {
   padding: 5px 10px;
   margin: 5px;
   display: block;
+}
+
+.opening a:hover {
+  color: darkturquoise;
 }
 
 .close {
