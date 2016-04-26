@@ -16,12 +16,15 @@ window.onload = function() {
   	var audioInput = document.getElementById('audiofile');
 
     audioInput.addEventListener('change', function(event) {
-      stream = URL.createObjectURL(event.target.files[0]);
-      audio = new Audio();
-      console.log(audio);
-      audio.src = stream;
-      setup();
-    });
+      if (!audioContext || audioContext.state !== "running"){
+          stream = URL.createObjectURL(event.target.files[0]);
+          audio = new Audio();
+          console.log(audio);
+          audio.src = stream;
+          setup();
+        }
+      });
+
 
     var sample = document.getElementsByClassName('sample')[0];
 
@@ -184,5 +187,16 @@ window.onload = function() {
     circlesButton.addEventListener("click", function() {
       display = "circles";
       console.log(display);
+    })
+    var question = document.getElementsByClassName('help')[0];
+    var closeButton = document.getElementsByClassName('close')[0];
+    var modal = document.getElementsByClassName('modal')[0];
+
+    closeButton.addEventListener("click", function(){
+      modal.classList.add("closed");
+    })
+
+    question.addEventListener("click", function() {
+      modal.classList.remove("closed");
     })
 };

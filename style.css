@@ -1,6 +1,21 @@
 ul {
   margin-top: 10px;
   padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+
+a:active {
+  color: #00688B;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
 }
 
 li {
@@ -43,7 +58,7 @@ p:hover {
   padding: 5px 10px;
   max-width: 133px;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 12px;
@@ -103,7 +118,7 @@ p:hover {
   padding: 5px 10px;
   max-width: 133px;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 12px;
@@ -125,7 +140,6 @@ p:hover {
   list-style: none;
   letter-spacing: 1.6px;
   font-size: 14px;
-  font-weight: lighter;
   padding: 5px 10px;
   border-top: 1px solid white;
 }
@@ -189,8 +203,8 @@ p:hover {
   margin-right: 20px;
 }
 
-.options a:hover {
-  color: #555;
+.options li a:hover {
+  background-color: rgba(255,255,255, .5);
 }
 
 .options a:active {
@@ -211,4 +225,77 @@ p:hover {
 
 .controls {
   padding-top: 20px;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255,255,255, .6);
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000;
+  font-family: 'Lato';
+}
+.help {
+  color: white;
+}
+
+.opening {
+  border: 3px solid white;
+  width: 25%;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: rgba(255,255,255, .5);
+  color: #555;
+    position: relative;
+}
+
+.opening .text{
+  margin: 15px auto;
+}
+
+.opening h1 {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-left: -20px;
+  padding-right: -20px;
+}
+
+.opening li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.opening .buttons {
+  margin: 0 auto;
+}
+.opening a {
+  margin-top: 30px;
+  background-color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  display: block;
+}
+
+.opening a:hover {
+  color: darkturquoise;
+}
+
+.close {
+  width: 93%;
+  margin-left: 30px;
+}
+
+.close a {
+  text-align: center;
+}
+
+.close:hover {
+  color: darkslategray;
+}
+
+.closed {
+  display: none;
 }
