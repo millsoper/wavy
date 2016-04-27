@@ -6,7 +6,7 @@ Wavy is a web application built using the Web Audio API and HTML5 Canvas for gen
 
 [see Wavy live][heroku]
 
-[heroku]: http://jmsoper.github.io/audio_visualizer
+[heroku]: http://jmsoper.github.io/wavy
 
 Wavy allows users to:
 
