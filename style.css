@@ -299,3 +299,11 @@ p:hover {
 .closed {
   display: none;
 }
+
+.opening li.github {
+  margin-left: 20px;
+}
+
+.opening li.personal {
+  margin-left: 20px;
+}
